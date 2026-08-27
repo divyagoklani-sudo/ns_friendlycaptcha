@@ -1,0 +1,12 @@
+# Adding form rendering options for Friendly Captcha
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                partialRootPaths:
+                  1974: EXT:ns_friendlycaptcha/Resources/Private/Frontend/Partials/
+              

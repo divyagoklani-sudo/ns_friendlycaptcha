@@ -1,0 +1,23 @@
+imports:
+  - { resource: "./Validators/FriendlyCaptcha.yaml" }
+
+  - { resource: "./FormElements/Form.yaml" }
+  - { resource: "./FormElements/FriendlyCaptcha.yaml" }
+
+  - { resource: "./Finishers/EmailToReceiver.yaml" }
+  - { resource: "./Finishers/EmailToSender.yaml" }
+
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formEditor:
+            dynamicJavaScriptModules:
+              additionalViewModelModules:
+                1730208326: '@nitsan/ns-friendlycaptcha/backend/form-editor/view-model.js'
+
+            formEditorPartials:
+              FormElement-FriendlyCaptcha: Stage/SimpleTemplate
+              # BC alias for existing forms
+              FormElement-Recaptcha: Stage/SimpleTemplate
