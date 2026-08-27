@@ -1,0 +1,14 @@
+# cat=Friendly Captcha//03; type=string; label= Site key: Friendly Captcha Site key
+public_key = 
+
+# cat=Friendly Captcha//04; type=string; label= Secret Key: Friendly Captcha Secret Key
+secret_key = 
+
+# cat=Friendly Captcha//08; type=options[Auto check,Check on Focus,Manual]; label=Automization Options
+autocheck = Auto check
+
+# cat=Friendly Captcha//09; type=boolean; label= Enable EU endpoint
+eu = 0
+
+# cat=Friendly Captcha//10; type=boolean; label= Enable PUZZLE
+enablepuzzle = 0
